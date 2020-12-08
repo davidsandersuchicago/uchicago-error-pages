@@ -77,7 +77,7 @@ body {
 
 .text {
     max-width: 55%;
-    font-size: 25px;
+    font-size: 1.35rem;
     color: #fff;
     font-weight: normal;
     margin: 0 auto;
@@ -118,10 +118,10 @@ body {
 	display:inline-block;
 	margin:auto;
 	position: relative;
-  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
   width: 100%;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .buttons_wrap{
@@ -186,6 +186,15 @@ a.button:hover{
 	margin: 45px auto 0;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 920px) {
   
   .buttons {
@@ -211,10 +220,19 @@ a.button:hover{
 <body>
   <div class="layout">
 		<div class="title">403</div>
-		<div class="text icon_500">Permission Denied: Uh oh, seems like you don't have access to this page. If this error persists please contact webhelp@uchicago.edu  </div>
+		<div class="text icon_500">Access Denied: Uh oh, it seems like you don't have permission to access to this page. If you think you should, or you would like more information. Please use the following resources below.
+		
 		<div class="buttons">
-     
+		  <ul style="text-align:left; color: #fff; font-size: 1.15rem;">
+		  <li> <a href="mailto: uchicagointranet@uchicago.edu ">For permission questions and help, contact "intranet support". </a></li>
+		  <li> <a href="mailto: webhelp@uchicago.edu">For any additional questions or issues, contact "web help". </a></li>
+		  </ul>
+		</div>
+		
 		</div>
   </div>
-</body>
+  
+  
+  </body>
+
 </html>
